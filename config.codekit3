@@ -105,6 +105,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/magicdash.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/magicdash-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/plaindash.js": {
 		"bF": 0,
 		"ft": 64,
@@ -367,7 +378,7 @@
 "projectAttributes": {
 	"creationDate": 626886001.651636,
 	"displayValue": "mcdonalda_Motion_Final",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_gray",
 	"iconImageWasSetByUser": 0
 	},
@@ -2475,7 +2486,7 @@
 	"npmSaveExactVersion": 0,
 	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
-	"previewPathAddition": "",
+	"previewPathAddition": "/deploy",
 	"rollupExternals": "",
 	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
 	"rollupTreeshakingEnabled": 1,

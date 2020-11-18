@@ -5174,13 +5174,14 @@
       iconTL$1.to("#meter6",{scale: 1});
       iconTL$1.to("#meter4",{scale: 1.5, transformOrigin:"50% 50%"});
       iconTL$1.to("#meter4",{scale: 1});
+      iconTL$1.to("#level2bar2-copy-24",{speed: 13, rotate: 180, transformOrigin:"50% 50%"} );
       iconTL$1.to("#meter3",{scale: 1.5, transformOrigin:"50% 50%"});
       iconTL$1.to("#meter3",{scale: 1});
       iconTL$1.to("#meter1",{scale: 1.5, transformOrigin:"50% 50%"});
       iconTL$1.to("#meter1",{scale: 1});
       iconTL$1.to("#meter2",{scale: 1.5, transformOrigin:"50% 50%"});
       iconTL$1.to("#meter2",{scale: 1});
-      iconTL$1.to("#level2bar2-copy-24",{speed: 13, rotate: 180, transformOrigin:"50% 50%"} );
+      
 
       
 
@@ -5192,9 +5193,20 @@
       return iconTL$1;
   }
 
+  const iconTL$2 = gsapWithCSS.timeline();
+
+
+
+  function magicdash(){
+      
+
+      return iconTL$2;
+  }
+
   const mainTl = gsapWithCSS.timeline();
 
   mainTl.add(iconAnimation())
-      .add(plainAnimation());
+      .add(plainAnimation())
+      .add(magicdash());
 
 }());
