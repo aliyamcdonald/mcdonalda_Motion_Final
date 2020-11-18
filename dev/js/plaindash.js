@@ -5,6 +5,7 @@ const iconTL = gsap.timeline();
 
 
 export function plainAnimation(){
+    
     iconTL.to("#meter5",{scale: 1.5, transformOrigin:"50% 50%"})
     iconTL.to("#meter5",{scale: 1})
     iconTL.to("#meter6",{scale: 1.5, transformOrigin:"50% 50%"})
@@ -18,6 +19,10 @@ export function plainAnimation(){
     iconTL.to("#meter1",{scale: 1})
     iconTL.to("#meter2",{scale: 1.5, transformOrigin:"50% 50%"})
     iconTL.to("#meter2",{scale: 1})
+
+
+
+    iconTL.from("#meter5", 2.3, {autoAlpha: 1}, {autoAlpha: 0, immediateRender:false})
     
 
     

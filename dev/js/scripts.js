@@ -6,5 +6,5 @@ import {magicdash} from "./magicdash.js"
 const mainTl = gsap.timeline();
 
 mainTl.add(iconAnimation())
-    .add(plainAnimation())
+    .add(plainAnimation(), "-=9.5")
     .add(magicdash());

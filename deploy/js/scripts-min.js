@@ -5168,6 +5168,7 @@
 
 
   function plainAnimation(){
+      
       iconTL$1.to("#meter5",{scale: 1.5, transformOrigin:"50% 50%"});
       iconTL$1.to("#meter5",{scale: 1});
       iconTL$1.to("#meter6",{scale: 1.5, transformOrigin:"50% 50%"});
@@ -5181,6 +5182,10 @@
       iconTL$1.to("#meter1",{scale: 1});
       iconTL$1.to("#meter2",{scale: 1.5, transformOrigin:"50% 50%"});
       iconTL$1.to("#meter2",{scale: 1});
+
+
+
+      iconTL$1.from("#meter5", 2.3, {autoAlpha: 1}, {autoAlpha: 0, immediateRender:false});
       
 
       
@@ -5206,7 +5211,7 @@
   const mainTl = gsapWithCSS.timeline();
 
   mainTl.add(iconAnimation())
-      .add(plainAnimation())
+      .add(plainAnimation(), "-=9.5")
       .add(magicdash());
 
 }());
