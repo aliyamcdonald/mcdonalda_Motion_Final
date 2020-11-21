@@ -7,4 +7,4 @@ const mainTl = gsap.timeline();
 
 mainTl.add(iconAnimation())
     .add(plainAnimation(), "-=9.5")
-    .add(magicdash());
+    .add(magicdash(), "-=3");

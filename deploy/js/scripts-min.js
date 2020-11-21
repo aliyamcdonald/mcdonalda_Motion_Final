@@ -5182,7 +5182,8 @@
       iconTL$1.to("#meter1",{scale: 1});
       iconTL$1.to("#meter2",{scale: 1.5, transformOrigin:"50% 50%"});
       iconTL$1.to("#meter2",{scale: 1});
-
+      iconTL$1.to("#meter2",{x: -170});
+      iconTL$1.to("#meter5",{x: 1000});
 
 
       iconTL$1.from("#meter5", 2.3, {autoAlpha: 1}, {autoAlpha: 0, immediateRender:false});
@@ -5203,8 +5204,21 @@
 
 
   function magicdash(){
-      
-
+      iconTL$2.from("#dashboardshape",{duration: 4, x: -1025});
+      iconTL$2.from("#level6" ,{duration: 2, x: 1100});
+      iconTL$2.from("#level5" ,{duration: 2, x: -1100});
+      iconTL$2.from("#dots" ,{duration: 1, alpha:0, stagger: 0.25});
+      iconTL$2.from("#star1" ,{duration: 1, alpha:0, stagger: 0.25});
+      iconTL$2.from("#star2" ,{duration: 1, alpha:0, stagger: 0.25});
+      iconTL$2.from("#star3" ,{duration: 1, alpha:0, stagger: 0.25});
+      iconTL$2.from("#star4" ,{duration: 1, alpha:0, stagger: 0.25});
+      iconTL$2.from("#star5" ,{duration: 1, alpha:0, stagger: 0.25});
+      iconTL$2.from("#star6" ,{duration: 1, alpha:0, stagger: 0.25});
+      iconTL$2.from("#level2" ,{duration: 1, x: -1100});
+      iconTL$2.from("#level1" ,{duration: 1, x: 1100});
+      iconTL$2.from("#button3" ,{duration: 2, alpha:0, stagger: 0.25});
+      iconTL$2.from("#button4" ,{duration: 2, alpha:0, stagger: 0.25});
+      iconTL$2.to("#meter1", {duration:2, morphSVG:"#button1"});
       return iconTL$2;
   }
 
@@ -5212,6 +5226,6 @@
 
   mainTl.add(iconAnimation())
       .add(plainAnimation(), "-=9.5")
-      .add(magicdash());
+      .add(magicdash(), "-=3");
 
 }());
