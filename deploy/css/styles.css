@@ -438,7 +438,9 @@ textarea {
   left: 0;
   width: 100%;
 }
-
-/* =============
-    Demo
-============= */
+#svg-container #level3 {
+  visibility: hidden;
+}
+#svg-container #level4 {
+  visibility: hidden;
+}
