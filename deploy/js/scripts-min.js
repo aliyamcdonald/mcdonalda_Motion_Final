@@ -7203,10 +7203,10 @@
       iconTL$1.to("#meter2",{x: -170});
       iconTL$1.to("#meter5",{x: 1050});
       iconTL$1.to("#levels",{alpha: 0})
-      .to("#button1base",{morphSVG: "#level3front", y: -100, fill: "#FD9DB5", stroke: "none"})
+      .to("#button1base",{morphSVG: "#level3front", y: -80, fill: "#FD9DB5", stroke: "none"})
       .to("#button1base",{alpha: 0},"level3same")
       .to("#level3",{alpha: 1, visibility: "visible"},"level3same")
-      .to("#meter4base",{morphSVG: "#level4front", y: -100, fill: "#FD9DB5", stroke: "none"})
+      .to("#meter4base",{morphSVG: "#level4front", y: -80, x: -70, fill: "#FD9DB5", stroke: "none"})
       .to("#meter4base",{alpha: 0},"level4same")
       .to("#level4",{alpha: 1, visibility: "visible"},"level4same")
       .to("#speedometer",{alpha: 0})
