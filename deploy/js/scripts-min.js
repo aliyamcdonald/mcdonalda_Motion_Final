@@ -7206,8 +7206,8 @@
       .to("#button1base",{morphSVG: "#level3front", y: -100, fill: "#FD9DB5", stroke: "none"})
       .to("#button1base",{alpha: 0},"level3same")
       .to("#level3",{alpha: 1, visibility: "visible"},"level3same")
-      .to("#meter2front",{morphSVG: "#level4front", y: -100, fill: "#FD9DB5", stroke: "none"})
-      .to("#meter2front",{alpha: 0},"level4same")
+      .to("#meter4base",{morphSVG: "#level4front", y: -100, fill: "#FD9DB5", stroke: "none"})
+      .to("#meter4base",{alpha: 0},"level4same")
       .to("#level4",{alpha: 1, visibility: "visible"},"level4same")
       .to("#speedometer",{alpha: 0})
       .from("#navigation",{alpha: 0},"speedometersame");
