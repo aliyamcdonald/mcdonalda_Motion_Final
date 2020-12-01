@@ -5158,7 +5158,7 @@
 
 
   function iconAnimation(){
-      iconTL.to("#busintro",{duration: 13, x: -1700});
+      iconTL.to("#busintro",{duration: 11, x: -1700});
 
       return iconTL;
   }
@@ -7189,30 +7189,30 @@
       
       iconTL$1.to("#meter5",{scale: 1.5, transformOrigin:"50% 50%"});
       iconTL$1.to("#meter5",{scale: 1});
-      iconTL$1.to("#meter6",{scale: 1.5, transformOrigin:"50% 50%"});
+      iconTL$1.to("#meter6",{scale: 1.5, transformOrigin:"50% 50%"}, "-=.5");
       iconTL$1.to("#meter6",{scale: 1});
-      iconTL$1.to("#meter4",{scale: 1.5, transformOrigin:"50% 50%"});
+      iconTL$1.to("#meter4",{scale: 1.5, transformOrigin:"50% 50%"}, "-=.5");
       iconTL$1.to("#meter4",{scale: 1});
       iconTL$1.to("#level2bar2-copy-24",{speed: 13, rotate: 180, transformOrigin:"50% 50%"} );
-      iconTL$1.to("#meter3",{scale: 1.5, transformOrigin:"50% 50%"});
+      iconTL$1.to("#meter3",{scale: 1.5, transformOrigin:"50% 50%"}, "+=1");
       iconTL$1.to("#meter3",{scale: 1});
-      iconTL$1.to("#meter1",{scale: 1.5, transformOrigin:"50% 50%"});
+      iconTL$1.to("#meter1",{scale: 1.5, transformOrigin:"50% 50%"}, "-=.5");
       iconTL$1.to("#meter1",{scale: 1});
-      iconTL$1.to("#meter2",{scale: 1.5, transformOrigin:"50% 50%"});
-      iconTL$1.to("#meter2",{scale: 1});
+      iconTL$1.to("#meter2",{scale: 1.5, transformOrigin:"50% 50%"}, "-=.5");
+      iconTL$1.to("#meter2",{scale: 1}); 
       iconTL$1.to("#meter2",{x: -170});
-      iconTL$1.to("#meter5",{x: 1050});
+      iconTL$1.to("#meter5",{x: 1050},"-=.5");
       iconTL$1.to("#levels",{alpha: 0})
-      .to("#button1base",{morphSVG: "#level3front", y: -80, fill: "#FD9DB5", stroke: "none"})
+      .to("#button1base",{morphSVG: "#level3front", y: -69, x: 10, fill: "#FD9DB5", stroke: "none"})
       .to("#button1base",{alpha: 0},"level3same")
       .to("#level3",{alpha: 1, visibility: "visible"},"level3same")
-      .to("#meter4base",{morphSVG: "#level4front", y: -80, x: -70, fill: "#FD9DB5", stroke: "none"})
+      .to("#meter4base",{morphSVG: "#level4front", y: -80, x: -55, fill: "#FD9DB5", stroke: "none"}, "<")
       .to("#meter4base",{alpha: 0},"level4same")
       .to("#level4",{alpha: 1, visibility: "visible"},"level4same")
       .to("#speedometer",{alpha: 0})
       .from("#navigation",{alpha: 0},"speedometersame");
-      iconTL$1.to("#meter1", {alpha: 0});
-      iconTL$1.from("#button1", {alpha: 0});
+      iconTL$1.to("#meter1", {alpha: 0}, "<");
+      iconTL$1.from("#button1", {alpha: 0}, "<");
       iconTL$1.to("#meter6", {alpha: 0});
       iconTL$1.from("#button2", {alpha: 0});
 
@@ -7239,13 +7239,14 @@
   function magicdash(){
       iconTL$2.from("#dashboardshape",{duration: 4, alpha: 0});
       iconTL$2.from("#level6" ,{x: 1010});
-      iconTL$2.from("#level5" ,{x: -1100});
+      iconTL$2.from("#level5" ,{x: -1100}, "<");
       iconTL$2.from("#dots" ,{duration: 1, alpha:0, stagger: 0.25});
-      iconTL$2.from("#star1, #star3, #star6" ,{duration: 1, alpha:0, stagger: 0.25});
+      iconTL$2.from("#star1, #star3, #star6" ,{duration: 1, alpha:0, stagger: 0.25}, "<");
       iconTL$2.from("#star2, #star4, #star5" ,{duration: 1, alpha:0, stagger: 0.25});
-      iconTL$2.from("#level2" ,{x: 1100});
-      iconTL$2.from("#level1" ,{x: -1100});
-      iconTL$2.from("#button3, #button4" ,{duration: 2, alpha:0, stagger: 0.25});
+      iconTL$2.from("#level2" ,{x: 1100}, "-=.5");
+      iconTL$2.from("#level1" ,{x: -1100}, "<");
+      iconTL$2.from("#button3" ,{duration: 2, alpha:0});
+      iconTL$2.from("#button4" ,{duration: 2, alpha:0}, "<");
       return iconTL$2;
   }
 
@@ -11840,7 +11841,7 @@
   const mainTl = gsapWithCSS.timeline();
 
   mainTl.add(iconAnimation())
-      .add(plainAnimation(), "-=9.5")
+      .add(plainAnimation(), "-=8.5")
       .add(magicdash(), "-=7");
 
       GSDevTools.create();
