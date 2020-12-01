@@ -5160,6 +5160,7 @@
   function iconAnimation(){
       iconTL.to("#busintro",{duration: 11, x: -1700});
 
+      
       return iconTL;
   }
 
@@ -7186,6 +7187,7 @@
 
 
   function plainAnimation(){
+      
       
       iconTL$1.to("#meter5",{scale: 1.5, transformOrigin:"50% 50%"});
       iconTL$1.to("#meter5",{scale: 1});
